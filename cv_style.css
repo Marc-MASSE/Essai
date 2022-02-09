@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body
+{
+    background-image: url("Images/blue-marble.jpg");
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+ }
+
+#liseret
+{
+    background-color: blue;
+    width: 15%;
+}
+
+
+
+#cv
+{
+    border: 2px navy dashed;
+    box-shadow: 4px 4px 6px navy;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+article
+{
+    width: 30%;
+}
+
+h1
+{
+    text-decoration: underline;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+h2
+{
+	color: blue;
+	font-size: 1.5em;
+}
+strong
+{
+	color: blueviolet;
+}
+
+#photo
+{
+    text-align: center;
+}
+
+ul,ol
+{
+    background-color: lightgreen;
+}
+
+
+@media screen and (max-width: 1280px)
+{
+    #liseret
+    {
+        display: none;
+    }
+    section
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    article
+    {
+        width: 100%;
+    }
+}
