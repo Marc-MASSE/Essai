@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="cv_style.css">
+	<title>Formulaire</title>
+</head>
+<body>
+
+	<div id="liseret"></div>
+
+	<div id="corps_du_texte">
+		<header>
+			<h1>Marc Massé</h1>
+			<h2>Pour obtenir plus d'informations</h2>
+		</header>
+
+		<section id="courrier">
+
+			<form method="post" action="envoi.php">	
+				<fieldset><legend>Vos coordonnées</legend>
+				   <p>
+				       <label for="nom">Votre nom</label> : <input type="text" name="nom" id="nom" />
+				   </p>
+				   <p>
+				       <label for="prenom">Votre prénom</label> : <input type="text" name="prenom" id="prenom" />
+				   </p>
+				   <p>
+				       <label for="mail">Votre mail</label> : <input type="email" name="mail" id="mail" />
+				   </p>
+				</fieldset>
+			
+				<p>Raison pour laquelle vous demandez des informations : <br/>
+					<input type="radio" name="raison" value="embauche" id="embauche"/><label for="embauche">Je veux vous embaucher.</label><br/>
+					<input type="radio" name="raison" value="formation" id="formation"/><label for="formation">Je veux vous former.</label><br/>
+					<input type="radio" name="raison" value="autre" id="autre"/><label for="autre">Autre raison.</label><br/>
+				</p>
+
+				<input type="submit" value="Envoyer le formulaire" />
+
+			</form>
+			
+		</section>
+
+	</div>
+
+</body>
+</html>
